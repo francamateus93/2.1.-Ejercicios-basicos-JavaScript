@@ -1,8 +1,11 @@
-// Ejercicio 1.1: Arrow functions - Nivel 1
+// Ejercicio 1.1: Arrow functions
+console.log("Ejercicio 1.1: Arrow functions")
 
 /*----------- Ejercicio 1*/
+console.log("----- Ej. 1:")
 
 const add = (a, b) => a + b;
+console.log(add);
 
 /*----------- Ejercicio 2*/
 console.log("----- Ej. 2:")
@@ -12,7 +15,7 @@ const randonNumber = () => Math.floor(Math.random() * 100);
 console.log(randonNumber(10));
 
 
-/*----------- Ejercicio 3*/
+/*----------- Ejercicio 3 - Nivel 2*/
 console.log("----- Ej. 3:")
 
 
@@ -45,9 +48,23 @@ printNumbers(arr);
 console.log("----- Ej. 5:")
 
 
-const printAfter = () => {
-  setTimeout( () => {
-    console.log("My Message was delivered.");}, 3000);
-};
+// const printAfter = () => {
+//   setTimeout( () => {
+//     console.log("My Message was delivered.");}, 3000);
+// };
 
-printAfter();
+// printAfter();
+
+
+// Ejercicio 1.2: Operador ternario
+console.log("Ejercicio 1.2: Operador ternario")
+
+/*----------- Ejercicio 1*/
+console.log("----- Ej. 1:")
+
+let edad = 10;
+function puedeConducir(edad) {
+  return edad >= 18 ? 'Puedes conducir' : 'No puedes conducir';
+}
+
+console.log(puedeConducir(10));
