@@ -9,3 +9,15 @@ const add = (a, b) => a + b;
 const randonNumber = () => Math.floor(Math.random() * 100);
 
 console.log(randonNumber(10));
+
+// Ejercicio 3
+
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+  greet = () => { console.log(`Hola, ${this.name}`) };
+}
+
+let person = new Person('John Smith');
+person.greet();
