@@ -68,3 +68,21 @@ function puedeConducir(edad) {
 }
 
 console.log(puedeConducir(10));
+
+/*----------- Ejercicio 2*/
+console.log("----- Ej. 2:")
+
+let num1 = 1;
+let num2 = 2;
+
+let resultado = num1 > num2 ? "num1 es mayor" : "num2 es mayor";
+console.log(resultado);
+
+/*----------- Ejercicio 3 - Nivel 2*/
+console.log("----- Ej. 3:")
+
+let num = 10;
+
+let result = num > 0 ? "Positivo" : num < 0 ? "Negativo" : "Cero";
+console.log(result);
+
