@@ -64,7 +64,7 @@ console.log("----- Ej. 1:")
 
 let edad = 10;
 function puedeConducir(edad) {
-  return edad >= 18 ? 'Puedes conducir' : 'No puedes conducir';
+  return edad >= 18 ? "Puedes conducir" : "No puedes conducir";
 }
 
 console.log(puedeConducir(10));
