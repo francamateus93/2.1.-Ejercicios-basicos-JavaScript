@@ -101,3 +101,39 @@ const parOImpar = (arra) => {
 }
 parOImpar(arra);
 
+
+// Ejercicio 1.3: Callbacks
+console.log("Ejercicio 1.3: Callbacks")
+
+/*----------- Ejercicio 1*/
+console.log("----- Ej. 1:")
+
+function procesar(num, callback) {
+  return callback(num);
+}
+
+function duplicar(num) {
+  return num * 5;
+}
+
+function reduzir(num) {
+  return num - 1;
+}
+
+console.log(procesar(5, duplicar));
+console.log(procesar(6, reduzir));
+
+/*----------- Ejercicio 2*/
+console.log("----- Ej. 2:")
+
+function calculadora(num1, num2, callback) {
+  return callback(num1, num2);
+}
+
+function suma(num1, num2) {
+  return num1 + num2;
+}
+
+console.log(calculadora(5, 4, suma));
+console.log(calculadora(25, 40, suma));
+
