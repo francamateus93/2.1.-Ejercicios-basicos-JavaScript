@@ -43,7 +43,6 @@ const printNumbers = (arr) => {
 
 printNumbers(arr);
 
-
 /*----------- Ejercicio 5 - Nivel 3*/
 console.log("----- Ej. 5:")
 
@@ -85,4 +84,20 @@ let num = 10;
 
 let result = num > 0 ? "Positivo" : num < 0 ? "Negativo" : "Cero";
 console.log(result);
+
+const encontrarMaximo = (a, b, c) => {
+  return a > b ? (a > c ? a : c) : (b > c ? b : c);
+}
+console.log(encontrarMaximo(40, 20 , 15));
+
+/*----------- Ejercicio 4 - Nivel 3*/
+console.log("----- Ej. 4:")
+
+const arra = [1, 2, 3, 4, 5]
+const parOImpar = (arra) => {
+  for (let i = 0; i < arra.length; i++) {
+    console.log(arra[i] % 2 ? "Impar" : "Par");
+  }
+}
+parOImpar(arra);
 
