@@ -6,3 +6,6 @@ const add = (a, b) => a + b;
 
 // Ejercicio 2
 
+const randonNumber = () => Math.floor(Math.random() * 100);
+
+console.log(randonNumber(10));
