@@ -137,3 +137,18 @@ function suma(num1, num2) {
 console.log(calculadora(5, 4, suma));
 console.log(calculadora(25, 40, suma));
 
+/*----------- Ejercicio 3*/
+console.log("----- Ej. 3:")
+
+function esperarISaludar(nombre, callback) {
+  setTimeout( () => {
+    callback(nombre);}, 2000);
+    };
+
+function saludar(nombre) {
+  return console.log(`Hola, ${nombre}. Como estás?`);
+}
+
+esperarISaludar('Luis', saludar);
+
+
