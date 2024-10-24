@@ -135,7 +135,7 @@ function suma(num1, num2) {
 console.log(calculadora(5, 4, suma));
 console.log(calculadora(25, 40, suma));
 
-/*----------- Ejercicio 3*/
+/*----------- Ejercicio 3 - Nivel 2*/
 console.log("----- Ej. 3:")
 
 // function esperarISaludar(nombre, callback) {
@@ -150,7 +150,7 @@ console.log("----- Ej. 3:")
 
 // esperarISaludar('Luis', saludar);
 
-/*----------- Ejercicio 4*/
+/*----------- Ejercicio 4 - Nivel 2*/
 console.log("----- Ej. 4:")
 
 const array = [10, 38, 6, 22, 75];
@@ -166,3 +166,19 @@ function invocarElements(array) {
 }
 
 procesarElements(array, invocarElements);
+
+/*----------- Ejercicio 5 - Nivel 3*/
+console.log("----- Ej. 5:")
+
+let cadena = '¡la cadena de caracteres!'
+
+function procesarCadena(cadena, callback) {
+  let cadenaMayuscula = cadena.toUpperCase();
+  callback(cadenaMayuscula);
+}
+
+function newCadena(cadena) {
+  return console.log(cadena);
+}
+
+procesarCadena(cadena, newCadena);
