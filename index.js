@@ -199,3 +199,24 @@ console.log(array3);
 
 /*----------- Ejercicio 2*/
 console.log("----- Ej. 2:")
+
+function sumar(...numeros) {
+  return numeros.reduce((a, b) => a + b);
+}
+
+console.log(sumar(1, 2, 3, 4));
+
+/*----------- Ejercicio 3 - Nivel 2*/
+console.log("----- Ej. 3:")
+
+const objeto1 = {
+  name: "Mateus",
+  age: 30,
+}
+
+const objeto2 = {...objeto1}
+objeto2.surname = "França";
+
+console.log(objeto1);
+console.log(objeto2);
+
