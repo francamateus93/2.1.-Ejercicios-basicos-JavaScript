@@ -18,7 +18,6 @@ console.log(randonNumber(10));
 /*----------- Ejercicio 3 - Nivel 2*/
 console.log("----- Ej. 3:")
 
-
 class Person {
   constructor(name) {
     this.name = name;
@@ -81,7 +80,6 @@ console.log(resultado);
 console.log("----- Ej. 3:")
 
 let num = 10;
-
 let result = num > 0 ? "Positivo" : num < 0 ? "Negativo" : "Cero";
 console.log(result);
 
@@ -140,15 +138,31 @@ console.log(calculadora(25, 40, suma));
 /*----------- Ejercicio 3*/
 console.log("----- Ej. 3:")
 
-function esperarISaludar(nombre, callback) {
-  setTimeout( () => {
-    callback(nombre);}, 2000);
-    };
+// function esperarISaludar(nombre, callback) {
+//   setTimeout( () => {
+//     callback(nombre);
+//   }, 2000);
+//     };
 
-function saludar(nombre) {
-  return console.log(`Hola, ${nombre}. Como estás?`);
+// function saludar(nombre) {
+//   return console.log(`Hola, ${nombre}. Como estás?`);
+// }
+
+// esperarISaludar('Luis', saludar);
+
+/*----------- Ejercicio 4*/
+console.log("----- Ej. 4:")
+
+const array = [10, 38, 6, 22, 75];
+
+function procesarElements(array, callback) {
+  for (let i = 0; i < array.length; i++) {
+    callback(array[i]);
+  }
 }
 
-esperarISaludar('Luis', saludar);
+function invocarElements(array) {
+  return console.log(array);
+}
 
-
+procesarElements(array, invocarElements);
