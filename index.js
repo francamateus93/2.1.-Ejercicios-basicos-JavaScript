@@ -182,3 +182,20 @@ function newCadena(cadena) {
 }
 
 procesarCadena(cadena, newCadena);
+
+
+// Ejercicio 1.4: Rest & Spread Operators
+console.log("Ejercicio 1.3: Callbacks")
+
+/*----------- Ejercicio 1*/
+console.log("----- Ej. 1:")
+
+const array1 = [10, 20];
+const array2 = [35, 45];
+
+const array3 = [...array1, ...array2];
+
+console.log(array3);
+
+/*----------- Ejercicio 2*/
+console.log("----- Ej. 2:")
