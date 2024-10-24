@@ -220,3 +220,13 @@ objeto2.surname = "França";
 console.log(objeto1);
 console.log(objeto2);
 
+/*----------- Ejercicio 4 - Nivel 2*/
+console.log("----- Ej. 4:")
+
+const Elements = ["Mateus", "França", 30, 1993];
+
+const [primeiro, segundo, ...rest] = Elements
+
+console.log(primeiro, segundo)
+console.log(rest)
+
