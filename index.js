@@ -298,3 +298,13 @@ const procesarPrecios = arr => arr.filter(num => num >= 10).map(num => num * 2).
 
 console.log(procesarPrecios(precios)); 
 
+/*----------- Ejercicio 6 - Nivel 3 - EVERY y SOME*/
+console.log("----- Ej. 6:")
+
+const age = [11, 12, 13, 14];
+
+const todosMayores = age.every(x => x > 10);
+console.log(todosMayores);
+
+const unoMayor = age.some(x => x > 10);
+console.log(unoMayor);
