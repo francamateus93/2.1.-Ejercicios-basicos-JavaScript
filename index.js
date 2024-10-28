@@ -324,3 +324,41 @@ for (nom of noms) {
 
 /*----------- Ejercicio 3*/
 console.log("----- Ej. 3:")
+
+let numbrs = [1, 2, 3, 4, 5, 6];
+
+let numsPares = numbrs.filter(x => x % 2 === 0)
+console.log(numsPares);
+
+/*----------- Ejercicio 4 - Nivel 2*/
+console.log("----- Ej. 4:")
+
+let obj = {
+  nombre: 'Ola', 
+  edad: 25, 
+  ciudad: 'Barcelona'}; 
+
+  for (const clave in obj) {
+    console.log(`${clave}: ${obj[clave]}`);
+}
+
+/*----------- Ejercicio 5 - Nivel 2*/
+console.log("----- Ej. 5:")
+
+let newNumeros = [1, 2, 3, 4, 5, 6];
+
+for (let numero of newNumeros) {
+  if (numero === 5) {
+   break;
+   }
+  console.log(numero);
+}
+
+/*----------- Ejercicio 6 - Nivel 2*/
+console.log("----- Ej. 6:")
+
+let nomes = ['Anna', 'Bernat', 'Clara'];
+
+for (let nome in nomes) {
+  console.log(`${nome}: ${nomes[nome]}`)
+}
