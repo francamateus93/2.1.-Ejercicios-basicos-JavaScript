@@ -362,3 +362,23 @@ let nomes = ['Anna', 'Bernat', 'Clara'];
 for (let nome in nomes) {
   console.log(`${nome}: ${nomes[nome]}`)
 }
+
+// Ejercicio 1.7: Promisas & Async/Await
+console.log("Ejercicio 1.7: Promisas & Async/Await")
+
+/*----------- Ejercicio 1*/
+console.log("----- Ej. 1:")
+
+async function realizarPromesa() {
+  try {
+    let resultado = await setTimeout(() => {console.log('Hola, mundo.');}, 2000);
+    console.log(resultado);
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+realizarPromesa();
+
+/*----------- Ejercicio 2*/
+console.log("----- Ej. 2:")
