@@ -185,7 +185,7 @@ procesarCadena(cadena, newCadena);
 
 
 // Ejercicio 1.4: Rest & Spread Operators
-console.log("Ejercicio 1.3: Callbacks")
+console.log("Ejercicio 1.4: Rest & Spread Operators")
 
 /*----------- Ejercicio 1*/
 console.log("----- Ej. 1:")
@@ -243,3 +243,22 @@ myProfile(...profile);
 
 /*----------- Ejercicio 6 - Nivel 3*/
 console.log("----- Ej. 6:")
+
+let datos1 = {
+  name: "John",
+  age: 30,
+}
+
+let datos2 = {
+  country: "France",
+  children: false,
+}
+
+const datos = { ...datos1, ...datos2};
+console.log(datos);
+
+// Ejercicio 1.5: Array transformations
+console.log("Ejercicio 1.5: Array transformations")
+
+/*----------- Ejercicio 1*/
+console.log("----- Ej. 1:")
