@@ -262,3 +262,10 @@ console.log("Ejercicio 1.5: Array transformations")
 
 /*----------- Ejercicio 1*/
 console.log("----- Ej. 1:")
+
+const nums = [2, 10, 30, 4];
+const newNums = nums.map((x) => (x * x));
+
+console.log(newNums);
+
+
