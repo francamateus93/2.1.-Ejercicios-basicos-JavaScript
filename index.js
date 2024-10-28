@@ -225,8 +225,21 @@ console.log("----- Ej. 4:")
 
 const Elements = ["Mateus", "França", 30, 1993];
 
-const [primeiro, segundo, ...rest] = Elements
+const [primeiro, segundo, ...numeros] = Elements
 
 console.log(primeiro, segundo)
-console.log(rest)
+console.log(numeros)
 
+/*----------- Ejercicio 5 - Nivel 3*/
+console.log("----- Ej. 5:")
+
+function myProfile(a, b, c) {
+  console.log(a, b, c);
+}
+
+const profile = [1993, 1989, 1982];
+
+myProfile(...profile);
+
+/*----------- Ejercicio 6 - Nivel 3*/
+console.log("----- Ej. 6:")
