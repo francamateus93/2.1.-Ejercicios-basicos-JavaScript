@@ -10,10 +10,8 @@ console.log(add);
 /*----------- Ejercicio 2*/
 console.log("----- Ej. 2:")
 
-
 const randonNumber = () => Math.floor(Math.random() * 100);
 console.log(randonNumber(10));
-
 
 /*----------- Ejercicio 3 - Nivel 2*/
 console.log("----- Ej. 3:")
@@ -28,10 +26,8 @@ class Person {
 let person = new Person('John Smith');
 person.greet();
 
-
 /*----------- Ejercicio 4 - Nivel 2*/
 console.log("----- Ej. 4:")
-
 
 const arr = [1, 3, 5, 7, 9];
 const printNumbers = (arr) => {
@@ -44,7 +40,6 @@ printNumbers(arr);
 
 /*----------- Ejercicio 5 - Nivel 3*/
 console.log("----- Ej. 5:")
-
 
 // const printAfter = () => {
 //   setTimeout( () => {
@@ -308,3 +303,24 @@ console.log(todosMayores);
 
 const unoMayor = age.some(x => x > 10);
 console.log(unoMayor);
+
+// Ejercicio 1.6: Array loops
+console.log("Ejercicio 1.6: Array loops")
+
+/*----------- Ejercicio 1*/
+console.log("----- Ej. 1:")
+
+let nombres = ['Anna', 'Bernat', 'Clara'];
+nombres.forEach(x => console.log(x));
+
+/*----------- Ejercicio 2*/
+console.log("----- Ej. 2:")
+
+let noms = ['Anna', 'Bernat', 'Clara'];
+
+for (nom of noms) {
+  console.log(nom);
+}
+
+/*----------- Ejercicio 3*/
+console.log("----- Ej. 3:")
