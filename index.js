@@ -260,12 +260,17 @@ console.log(datos);
 // Ejercicio 1.5: Array transformations
 console.log("Ejercicio 1.5: Array transformations")
 
-/*----------- Ejercicio 1*/
+/*----------- Ejercicio 1 - MAP*/
 console.log("----- Ej. 1:")
 
-const nums = [2, 10, 30, 4];
+const nums = [1, 2, 3, 4];
 const newNums = nums.map((x) => (x * x));
 
 console.log(newNums);
 
+/*----------- Ejercicio 2 - FILTER*/
+console.log("----- Ej. 2:")
+
+const pairNums = nums.filter((x) => (x % 2 === 0));
+console.log(pairNums);
 
