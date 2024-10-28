@@ -264,21 +264,37 @@ console.log("Ejercicio 1.5: Array transformations")
 console.log("----- Ej. 1:")
 
 const nums = [1, 2, 3, 4];
-const newNums = nums.map((x) => (x * x));
+const newNums = nums.map(x => x * x);
 
 console.log(newNums);
 
 /*----------- Ejercicio 2 - FILTER*/
 console.log("----- Ej. 2:")
 
-const pairNums = nums.filter((x) => (x % 2 === 0));
+const pairNums = nums.filter(x => x % 2 === 0);
 console.log(pairNums);
 
 /*----------- Ejercicio 3 - FIND*/
 console.log("----- Ej. 3:")
 
 const numbers = [1, 10 , 8, 11];
+const mayorDiez = numbers.find(x => x > 10);
 
-const mayorDiez = numbers.find((x) => (x > 10));
 console.log(mayorDiez);
+
+/*----------- Ejercicio 4 - REDUCE*/
+console.log("----- Ej. 4:")
+
+const prices = [13, 7, 8, 21];
+const sumPrices = prices.reduce((a, b) => (a + b));
+
+console.log(sumPrices);
+
+/*----------- Ejercicio 5 - Nivel 2*/
+console.log("----- Ej. 5:")
+
+const precios = [1, 3, 7, 10, 15, 17, 11, 5, 8, 12, 9];
+const procesarPrecios = arr => arr.filter(num => num >= 10).map(num => num * 2).reduce((acc, num) => acc + num, 0);
+
+console.log(procesarPrecios(precios)); 
 
