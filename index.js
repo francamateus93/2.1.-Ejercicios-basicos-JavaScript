@@ -274,3 +274,11 @@ console.log("----- Ej. 2:")
 const pairNums = nums.filter((x) => (x % 2 === 0));
 console.log(pairNums);
 
+/*----------- Ejercicio 3 - FIND*/
+console.log("----- Ej. 3:")
+
+const numbers = [1, 10 , 8, 11];
+
+const mayorDiez = numbers.find((x) => (x > 10));
+console.log(mayorDiez);
+
