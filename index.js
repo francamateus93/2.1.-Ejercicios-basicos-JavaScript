@@ -419,13 +419,37 @@ let promesa = new Promise((resolve) => {
   }, 2000);}
 );
 
-async function verificarPromesa () {
-  try {
-    let result = await promesa;
-    console.log(result);
-  } catch (error) {
-    console.log(error);
-  }
-}
+// async function verificarPromesa () {
+//     let result = await promesa;
+//     console.log(result);
+//   } 
 
-verificarPromesa(promesa);
+// verificarPromesa();
+
+/*----------- Ejercicio 5 - Nivel 2*/
+console.log("----- Ej. 5:")
+
+// async function verificarPromesa () {
+//   try {
+//     let result = await promesa;
+//     console.log(result);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+
+// verificarPromesa();
+
+/*----------- Ejercicio 6 - Nivel 3*/
+console.log("----- Ej. 6:")
+
+let promesa2 = new Promise((resolve) => setTimeout(() => resolve("Resultado 2"), 2000));
+let promesa3 = new Promise((resolve) => setTimeout(() => resolve('Resultado 3'), 3000));
+
+Promise.all([promesa2, promesa3])
+  .then((resultados) => {
+    console.log(resultados);
+  })
+  .catch((error) => {
+    console.log(error);
+  })
