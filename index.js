@@ -369,16 +369,49 @@ console.log("Ejercicio 1.7: Promisas & Async/Await")
 /*----------- Ejercicio 1*/
 console.log("----- Ej. 1:")
 
-async function realizarPromesa() {
-  try {
-    let resultado = await setTimeout(() => {console.log('Hola, mundo.');}, 2000);
-    console.log(resultado);
-  } catch (error) {
-    console.log(error)
-  }
-}
+// let promesa = new Promise((resolve) => {
+//   setTimeout(() => {
+//     resolve('Hola, mundo!');
+//   }, 2000);}
+// );
 
-realizarPromesa();
+let promesa = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve()
+  })
+})
 
 /*----------- Ejercicio 2*/
 console.log("----- Ej. 2:")
+
+// let promesa = new Promise((resolve) => {
+//   setTimeout(() => {
+//     resolve('Hola, mundo!');
+//   }, 2000);}
+// );
+
+// promesa.then((resolve) => {
+//   console.log(resolve);
+// });
+
+/*----------- Ejercicio 3*/
+console.log("----- Ej. 3:")
+
+function checkInput(input) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+         if (input === 'Hola') {
+          resolve(console.log('Correcto'));
+        } else {
+          reject(console.log('Rechazado'));}
+        }, 2000);}
+      );
+  }
+
+checkInput('Holy')
+.then((datos) => {
+  console.log(datos);
+})
+.catch((error) => {
+  console.log(error);
+})
