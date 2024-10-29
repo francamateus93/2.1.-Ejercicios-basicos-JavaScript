@@ -1,59 +1,61 @@
 // Ejercicio 1.1: Arrow functions
-console.log("Ejercicio 1.1: Arrow functions")
+console.log("Ejercicio 1.1: Arrow functions");
 
 /*----------- Ejercicio 1*/
-console.log("----- Ej. 1:")
+console.log("----- Ej. 1:");
 
 const add = (a, b) => a + b;
 console.log(add);
 
 /*----------- Ejercicio 2*/
-console.log("----- Ej. 2:")
+console.log("----- Ej. 2:");
 
 const randonNumber = () => Math.floor(Math.random() * 100);
 console.log(randonNumber(10));
 
 /*----------- Ejercicio 3 - Nivel 2*/
-console.log("----- Ej. 3:")
+console.log("----- Ej. 3:");
 
 class Person {
   constructor(name) {
     this.name = name;
   }
-  greet = () => { console.log(`Hola, ${this.name}`) };
+  greet = () => {
+    console.log(`Hola, ${this.name}`);
+  };
 }
 
-let person = new Person('John Smith');
+let person = new Person("John Smith");
 person.greet();
 
 /*----------- Ejercicio 4 - Nivel 2*/
-console.log("----- Ej. 4:")
+console.log("----- Ej. 4:");
 
 const arr = [1, 3, 5, 7, 9];
 const printNumbers = (arr) => {
   for (let i = 0; i < arr.length; i++) {
     console.log(arr[i]);
   }
-}
+};
 
 printNumbers(arr);
 
 /*----------- Ejercicio 5 - Nivel 3*/
-console.log("----- Ej. 5:")
+console.log("----- Ej. 5:");
 
-// const printAfter = () => {
-//   setTimeout( () => {
-//     console.log("My Message was delivered.");}, 3000);
-// };
+const printAfter = () => {
+  setTimeout(() => {
+    console.log("My Message was delivered.");
+  }, 3000);
+};
 
-// printAfter();
-
+printAfter();
 
 // Ejercicio 1.2: Operador ternario
-console.log("Ejercicio 1.2: Operador ternario")
+console.log("Ejercicio 1.2: Operador ternario");
 
 /*----------- Ejercicio 1*/
-console.log("----- Ej. 1:")
+console.log("----- Ej. 1:");
 
 let edad = 10;
 function puedeConducir(edad) {
@@ -63,7 +65,7 @@ function puedeConducir(edad) {
 console.log(puedeConducir(10));
 
 /*----------- Ejercicio 2*/
-console.log("----- Ej. 2:")
+console.log("----- Ej. 2:");
 
 let num1 = 1;
 let num2 = 2;
@@ -72,34 +74,33 @@ let resultado = num1 > num2 ? "num1 es mayor" : "num2 es mayor";
 console.log(resultado);
 
 /*----------- Ejercicio 3 - Nivel 2*/
-console.log("----- Ej. 3:")
+console.log("----- Ej. 3:");
 
 let num = 10;
 let result = num > 0 ? "Positivo" : num < 0 ? "Negativo" : "Cero";
 console.log(result);
 
 const encontrarMaximo = (a, b, c) => {
-  return a > b ? (a > c ? a : c) : (b > c ? b : c);
-}
-console.log(encontrarMaximo(40, 20 , 15));
+  return a > b ? (a > c ? a : c) : b > c ? b : c;
+};
+console.log(encontrarMaximo(40, 20, 15));
 
 /*----------- Ejercicio 4 - Nivel 3*/
-console.log("----- Ej. 4:")
+console.log("----- Ej. 4:");
 
-const arra = [1, 2, 3, 4, 5]
+const arra = [1, 2, 3, 4, 5];
 const parOImpar = (arra) => {
   for (let i = 0; i < arra.length; i++) {
     console.log(arra[i] % 2 ? "Impar" : "Par");
   }
-}
+};
 parOImpar(arra);
 
-
 // Ejercicio 1.3: Callbacks
-console.log("Ejercicio 1.3: Callbacks")
+console.log("Ejercicio 1.3: Callbacks");
 
 /*----------- Ejercicio 1*/
-console.log("----- Ej. 1:")
+console.log("----- Ej. 1:");
 
 function procesar(num, callback) {
   return callback(num);
@@ -117,7 +118,7 @@ console.log(procesar(5, duplicar));
 console.log(procesar(6, reduzir));
 
 /*----------- Ejercicio 2*/
-console.log("----- Ej. 2:")
+console.log("----- Ej. 2:");
 
 function calculadora(num1, num2, callback) {
   return callback(num1, num2);
@@ -131,22 +132,22 @@ console.log(calculadora(5, 4, suma));
 console.log(calculadora(25, 40, suma));
 
 /*----------- Ejercicio 3 - Nivel 2*/
-console.log("----- Ej. 3:")
+console.log("----- Ej. 3:");
 
-// function esperarISaludar(nombre, callback) {
-//   setTimeout( () => {
-//     callback(nombre);
-//   }, 2000);
-//     };
+function esperarISaludar(nombre, callback) {
+  setTimeout(() => {
+    callback(nombre);
+  }, 2000);
+}
 
-// function saludar(nombre) {
-//   return console.log(`Hola, ${nombre}. Como estás?`);
-// }
+function saludar(nombre) {
+  return console.log(`Hola, ${nombre}. Como estás?`);
+}
 
-// esperarISaludar('Luis', saludar);
+esperarISaludar("Luis", saludar);
 
 /*----------- Ejercicio 4 - Nivel 2*/
-console.log("----- Ej. 4:")
+console.log("----- Ej. 4:");
 
 const array = [10, 38, 6, 22, 75];
 
@@ -163,9 +164,9 @@ function invocarElements(array) {
 procesarElements(array, invocarElements);
 
 /*----------- Ejercicio 5 - Nivel 3*/
-console.log("----- Ej. 5:")
+console.log("----- Ej. 5:");
 
-let cadena = '¡la cadena de caracteres!'
+let cadena = "¡la cadena de caracteres!";
 
 function procesarCadena(cadena, callback) {
   let cadenaMayuscula = cadena.toUpperCase();
@@ -178,12 +179,11 @@ function newCadena(cadena) {
 
 procesarCadena(cadena, newCadena);
 
-
 // Ejercicio 1.4: Rest & Spread Operators
-console.log("Ejercicio 1.4: Rest & Spread Operators")
+console.log("Ejercicio 1.4: Rest & Spread Operators");
 
 /*----------- Ejercicio 1*/
-console.log("----- Ej. 1:")
+console.log("----- Ej. 1:");
 
 const array1 = [10, 20];
 const array2 = [35, 45];
@@ -193,7 +193,7 @@ const array3 = [...array1, ...array2];
 console.log(array3);
 
 /*----------- Ejercicio 2*/
-console.log("----- Ej. 2:")
+console.log("----- Ej. 2:");
 
 function sumar(...numeros) {
   return numeros.reduce((a, b) => a + b);
@@ -202,31 +202,31 @@ function sumar(...numeros) {
 console.log(sumar(1, 2, 3, 4));
 
 /*----------- Ejercicio 3 - Nivel 2*/
-console.log("----- Ej. 3:")
+console.log("----- Ej. 3:");
 
 const objeto1 = {
   name: "Mateus",
   age: 30,
-}
+};
 
-const objeto2 = {...objeto1}
+const objeto2 = { ...objeto1 };
 objeto2.surname = "França";
 
 console.log(objeto1);
 console.log(objeto2);
 
 /*----------- Ejercicio 4 - Nivel 2*/
-console.log("----- Ej. 4:")
+console.log("----- Ej. 4:");
 
 const Elements = ["Mateus", "França", 30, 1993];
 
-const [primeiro, segundo, ...numeros] = Elements
+const [primeiro, segundo, ...numeros] = Elements;
 
-console.log(primeiro, segundo)
-console.log(numeros)
+console.log(primeiro, segundo);
+console.log(numeros);
 
 /*----------- Ejercicio 5 - Nivel 3*/
-console.log("----- Ej. 5:")
+console.log("----- Ej. 5:");
 
 function myProfile(a, b, c) {
   console.log(a, b, c);
@@ -237,214 +237,224 @@ const profile = [1993, 1989, 1982];
 myProfile(...profile);
 
 /*----------- Ejercicio 6 - Nivel 3*/
-console.log("----- Ej. 6:")
+console.log("----- Ej. 6:");
 
 let datos1 = {
   name: "John",
   age: 30,
-}
+};
 
 let datos2 = {
   country: "France",
   children: false,
-}
+};
 
-const datos = { ...datos1, ...datos2};
+const datos = { ...datos1, ...datos2 };
 console.log(datos);
 
 // Ejercicio 1.5: Array transformations
-console.log("Ejercicio 1.5: Array transformations")
+console.log("Ejercicio 1.5: Array transformations");
 
 /*----------- Ejercicio 1 - MAP*/
-console.log("----- Ej. 1:")
+console.log("----- Ej. 1:");
 
 const nums = [1, 2, 3, 4];
-const newNums = nums.map(x => x * x);
+const newNums = nums.map((x) => x * x);
 
 console.log(newNums);
 
 /*----------- Ejercicio 2 - FILTER*/
-console.log("----- Ej. 2:")
+console.log("----- Ej. 2:");
 
-const pairNums = nums.filter(x => x % 2 === 0);
+const pairNums = nums.filter((x) => x % 2 === 0);
 console.log(pairNums);
 
 /*----------- Ejercicio 3 - FIND*/
-console.log("----- Ej. 3:")
+console.log("----- Ej. 3:");
 
-const numbers = [1, 10 , 8, 11];
-const mayorDiez = numbers.find(x => x > 10);
+const numbers = [1, 10, 8, 11];
+const mayorDiez = numbers.find((x) => x > 10);
 
 console.log(mayorDiez);
 
 /*----------- Ejercicio 4 - REDUCE*/
-console.log("----- Ej. 4:")
+console.log("----- Ej. 4:");
 
 const prices = [13, 7, 8, 21];
-const sumPrices = prices.reduce((a, b) => (a + b));
+const sumPrices = prices.reduce((a, b) => a + b);
 
 console.log(sumPrices);
 
 /*----------- Ejercicio 5 - Nivel 2*/
-console.log("----- Ej. 5:")
+console.log("----- Ej. 5:");
 
 const precios = [1, 3, 7, 10, 15, 17, 11, 5, 8, 12, 9];
-const procesarPrecios = arr => arr.filter(num => num >= 10).map(num => num * 2).reduce((acc, num) => acc + num, 0);
+const procesarPrecios = (arr) =>
+  arr
+    .filter((num) => num >= 10)
+    .map((num) => num * 2)
+    .reduce((acc, num) => acc + num, 0);
 
-console.log(procesarPrecios(precios)); 
+console.log(procesarPrecios(precios));
 
 /*----------- Ejercicio 6 - Nivel 3 - EVERY y SOME*/
-console.log("----- Ej. 6:")
+console.log("----- Ej. 6:");
 
 const age = [11, 12, 13, 14];
 
-const todosMayores = age.every(x => x > 10);
+const todosMayores = age.every((x) => x > 10);
 console.log(todosMayores);
 
-const unoMayor = age.some(x => x > 10);
+const unoMayor = age.some((x) => x > 10);
 console.log(unoMayor);
 
 // Ejercicio 1.6: Array loops
-console.log("Ejercicio 1.6: Array loops")
+console.log("Ejercicio 1.6: Array loops");
 
 /*----------- Ejercicio 1*/
-console.log("----- Ej. 1:")
+console.log("----- Ej. 1:");
 
-let nombres = ['Anna', 'Bernat', 'Clara'];
-nombres.forEach(x => console.log(x));
+let nombres = ["Anna", "Bernat", "Clara"];
+nombres.forEach((x) => console.log(x));
 
 /*----------- Ejercicio 2*/
-console.log("----- Ej. 2:")
+console.log("----- Ej. 2:");
 
-let noms = ['Anna', 'Bernat', 'Clara'];
+let noms = ["Anna", "Bernat", "Clara"];
 
 for (nom of noms) {
   console.log(nom);
 }
 
 /*----------- Ejercicio 3*/
-console.log("----- Ej. 3:")
+console.log("----- Ej. 3:");
 
 let numbrs = [1, 2, 3, 4, 5, 6];
 
-let numsPares = numbrs.filter(x => x % 2 === 0)
+let numsPares = numbrs.filter((x) => x % 2 === 0);
 console.log(numsPares);
 
 /*----------- Ejercicio 4 - Nivel 2*/
-console.log("----- Ej. 4:")
+console.log("----- Ej. 4:");
 
 let obj = {
-  nombre: 'Ola', 
-  edad: 25, 
-  ciudad: 'Barcelona'}; 
+  nombre: "Ola",
+  edad: 25,
+  ciudad: "Barcelona",
+};
 
-  for (const clave in obj) {
-    console.log(`${clave}: ${obj[clave]}`);
+for (const clave in obj) {
+  console.log(`${clave}: ${obj[clave]}`);
 }
 
 /*----------- Ejercicio 5 - Nivel 2*/
-console.log("----- Ej. 5:")
+console.log("----- Ej. 5:");
 
 let newNumeros = [1, 2, 3, 4, 5, 6];
 
 for (let numero of newNumeros) {
   if (numero === 5) {
-   break;
-   }
+    break;
+  }
   console.log(numero);
 }
 
 /*----------- Ejercicio 6 - Nivel 2*/
-console.log("----- Ej. 6:")
+console.log("----- Ej. 6:");
 
-let nomes = ['Anna', 'Bernat', 'Clara'];
+let nomes = ["Anna", "Bernat", "Clara"];
 
 for (let nome in nomes) {
-  console.log(`${nome}: ${nomes[nome]}`)
+  console.log(`${nome}: ${nomes[nome]}`);
 }
 
 // Ejercicio 1.7: Promisas & Async/Await
-console.log("Ejercicio 1.7: Promisas & Async/Await")
+console.log("Ejercicio 1.7: Promisas & Async/Await");
 
 /*----------- Ejercicio 1*/
-console.log("----- Ej. 1:")
-
-// let promesa = new Promise((resolve) => {
-//   setTimeout(() => {
-//     resolve('Hola, mundo!');
-//   }, 2000);}
-// );
-
-/*----------- Ejercicio 2*/
-console.log("----- Ej. 2:")
-
-// let promesa = new Promise((resolve) => {
-//   setTimeout(() => {
-//     resolve('Hola, mundo!');
-//   }, 2000);}
-// );
-
-// promesa.then((resolve) => {
-//   console.log(resolve);
-// });
-
-/*----------- Ejercicio 3*/
-console.log("----- Ej. 3:")
-
-// function checkInput(input) {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//          if (input === 'Hola') {
-//           resolve(console.log('Correcto'));
-//         } else {
-//           reject(console.log('Rechazado'));}
-//         }, 2000);}
-//       );
-//   }
-
-// checkInput('Hola')
-// .then((datos) => {
-//   console.log(datos);
-// })
-// .catch((error) => {
-//   console.log(error);
-// })
-
-/*----------- Ejercicio 4*/
-console.log("----- Ej. 4:")
+console.log("----- Ej. 1:");
 
 let promesa = new Promise((resolve) => {
   setTimeout(() => {
-    resolve('Hola, mundo!');
-  }, 2000);}
-);
+    resolve("Hola, mundo!");
+  }, 2000);
+});
 
-// async function verificarPromesa () {
-//     let result = await promesa;
-//     console.log(result);
-//   } 
+/*----------- Ejercicio 2*/
+console.log("----- Ej. 2:");
 
-// verificarPromesa();
+// let promesa = new Promise((resolve) => {
+//   setTimeout(() => {
+//     resolve("Hola, mundo!");
+//   }, 2000);
+// });
+
+promesa.then((resolve) => {
+  console.log(resolve);
+});
+
+/*----------- Ejercicio 3*/
+console.log("----- Ej. 3:");
+
+function checkInput(input) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (input === "Hola") {
+        resolve(console.log("Correcto"));
+      } else {
+        reject(console.log("Rechazado"));
+      }
+    }, 2000);
+  });
+}
+
+checkInput("Hola")
+  .then((datos) => {
+    console.log(datos);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+
+/*----------- Ejercicio 4*/
+console.log("----- Ej. 4:");
+
+let promise = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve("Hola, mundo!");
+  }, 2000);
+});
+
+async function verificarPromesa() {
+  let result = await promise;
+  console.log(result);
+}
+
+verificarPromesa();
 
 /*----------- Ejercicio 5 - Nivel 2*/
-console.log("----- Ej. 5:")
+console.log("----- Ej. 5:");
 
-// async function verificarPromesa () {
-//   try {
-//     let result = await promesa;
-//     console.log(result);
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
+async function verificarPromesa() {
+  try {
+    let result = await promesa;
+    console.log(result);
+  } catch (error) {
+    console.log(error);
+  }
+}
 
-// verificarPromesa();
+verificarPromesa();
 
 /*----------- Ejercicio 6 - Nivel 3*/
-console.log("----- Ej. 6:")
+console.log("----- Ej. 6:");
 
-let promesa2 = new Promise((resolve) => setTimeout(() => resolve("Resultado 2"), 2000));
-let promesa3 = new Promise((resolve) => setTimeout(() => resolve('Resultado 3'), 3000));
+let promesa2 = new Promise((resolve) =>
+  setTimeout(() => resolve("Resultado 2"), 2000)
+);
+let promesa3 = new Promise((resolve) =>
+  setTimeout(() => resolve("Resultado 3"), 3000)
+);
 
 Promise.all([promesa2, promesa3])
   .then((resultados) => {
@@ -452,4 +462,4 @@ Promise.all([promesa2, promesa3])
   })
   .catch((error) => {
     console.log(error);
-  })
+  });
