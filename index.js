@@ -375,12 +375,6 @@ console.log("----- Ej. 1:")
 //   }, 2000);}
 // );
 
-let promesa = new Promise((resolve) => {
-  setTimeout(() => {
-    resolve()
-  })
-})
-
 /*----------- Ejercicio 2*/
 console.log("----- Ej. 2:")
 
@@ -397,21 +391,41 @@ console.log("----- Ej. 2:")
 /*----------- Ejercicio 3*/
 console.log("----- Ej. 3:")
 
-function checkInput(input) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-         if (input === 'Hola') {
-          resolve(console.log('Correcto'));
-        } else {
-          reject(console.log('Rechazado'));}
-        }, 2000);}
-      );
-  }
+// function checkInput(input) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//          if (input === 'Hola') {
+//           resolve(console.log('Correcto'));
+//         } else {
+//           reject(console.log('Rechazado'));}
+//         }, 2000);}
+//       );
+//   }
 
-checkInput('Holy')
-.then((datos) => {
-  console.log(datos);
-})
-.catch((error) => {
-  console.log(error);
-})
+// checkInput('Hola')
+// .then((datos) => {
+//   console.log(datos);
+// })
+// .catch((error) => {
+//   console.log(error);
+// })
+
+/*----------- Ejercicio 4*/
+console.log("----- Ej. 4:")
+
+let promesa = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve('Hola, mundo!');
+  }, 2000);}
+);
+
+async function verificarPromesa () {
+  try {
+    let result = await promesa;
+    console.log(result);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+verificarPromesa(promesa);
